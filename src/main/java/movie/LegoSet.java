@@ -1,14 +1,13 @@
-package legoset;
+package movie;
+
+import legoset.Minifig;
+import legoset.YearAdapter;
 import lombok.Data;
 
-import java.time.Year;
-import legoset.YearAdapter;
-import java.util.List;
-import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import java.time.Year;
+import java.util.List;
 
-@XmlRootElement
-@XmlAccessorType(XmlAccessType.FIELD)
 @Data
 public class LegoSet {
     private String name;
@@ -20,7 +19,7 @@ public class LegoSet {
     private Year year;
     private int pieces;
     private java.util.Set<String> tags;
-    private java.util.List<Minifig> minifigs;
+    private List<Minifig> minifigs;
 
 
 
